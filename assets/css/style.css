@@ -26,7 +26,7 @@
     );
     
     /* Typography */
-    --font-heading: 'Outfit', sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Plus Jakarta Sans', sans-serif;
     
     /* Transitions */
@@ -333,8 +333,8 @@ img {
 }
 
 .text-artist {
-    font-family: 'Charm', cursive; /* Bạn cũng có thể thử 'Playwrite VN' nếu thích phong cách chữ mềm mại hơn */
-    font-weight: 700;
+    font-family: 'Alex Brush', 'Great Vibes', 'Ephesis', cursive;
+    font-weight: 400;
     font-size: clamp(3.2rem, 10vw, 8.5rem);
     background: linear-gradient(135deg, #ff3e3e 0%, #ff6b35 50%, #ffb100 100%);
     -webkit-background-clip: text;
@@ -763,7 +763,7 @@ img {
    PROJECTS SECTION (CATEGORIZED PORTFOLIO)
    ========================================================================== */
 .projects-section {
-    padding: 0 0 100px 0;
+    padding: 0;
     background-color: var(--color-bg-dark);
     position: relative;
 }
@@ -1173,7 +1173,7 @@ img {
 .contact-section {
     width: 100%;
     padding: 0;
-    margin-top: 80px;
+    margin-top: 0;
     margin-bottom: 0;
     background-color: var(--color-bg-dark);
     position: relative;
@@ -1296,9 +1296,13 @@ img {
         height: 240px !important;
     }
 }
-
 /* For Mobile Devices */
 @media (max-width: 768px) {
+    /* Responsive Spacing & Containers */
+    .container, .header-container {
+        padding: 0 16px;
+    }
+
     /* Header menu mobile */
     .mobile-menu-toggle {
         display: flex;
@@ -1333,7 +1337,7 @@ img {
     }
     
     .header-actions {
-        margin-right: 40px;
+        margin-right: 0; /* Align mobile toggle perfectly with the container right padding */
     }
     
     .btn-talk {
@@ -1353,11 +1357,24 @@ img {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    /* Logo size adjustments for extra small screens */
+    @media (max-width: 480px) {
+        .logo {
+            font-size: 1.2rem;
+            gap: 6px;
+        }
+        .logo span {
+            font-size: 0.75rem;
+            padding-left: 6px;
+            letter-spacing: 1px;
+        }
+    }
+
     /* Hero Responsive */
     .hero-section {
         background-position: 78% center;
         padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom: 100px;
         text-align: center;
         display: flex;
         align-items: center;
@@ -1378,6 +1395,18 @@ img {
     .hero-desc {
         margin-left: auto;
         margin-right: auto;
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .hero-motto {
+        border-left: 3px solid var(--color-primary);
+        padding: 8px 0 8px 16px;
+        margin-top: -10px;
+        margin-bottom: 30px;
+        text-align: left;
+        width: 100%;
+        max-width: 500px;
     }
     
     .hero-actions {
@@ -1393,6 +1422,11 @@ img {
     /* Hide Side Socials and Scroll Down on Mobile */
     .hero-socials, .scroll-indicator {
         display: none;
+    }
+
+    /* Section Header compacting */
+    .section-header {
+        margin-bottom: 40px;
     }
 
     /* Skills Section Responsive */
@@ -1419,15 +1453,15 @@ img {
     }
 
     .projects-section {
-        padding: 0 0 80px 0;
+        padding: 0;
     }
     
     .portfolio-category {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
     
     .contact-section {
-        margin-top: 50px;
+        margin-top: 0;
     }
     
     .category-banner-wrapper {
@@ -1460,7 +1494,13 @@ img {
         margin-top: 24px;
     }
     
-    .collage-column {
+    .collage-column,
+    .col-left,
+    .col-right,
+    .env-collage .col-left,
+    .env-collage .col-right,
+    .ui-collage .col-left,
+    .ui-collage .col-right {
         width: 100% !important;
         flex: 0 0 100% !important;
         gap: 20px;
@@ -1488,5 +1528,4 @@ img {
     .collage-item:not(.has-img) .collage-img-container {
         height: 200px !important;
     }
-
 }
