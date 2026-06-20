@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Văn Trận Portfolio | Creative Developer & Artist</title>
+    <meta name="description" content="Portfolio của Văn Trận - Nhà phát triển sáng tạo và nghệ sĩ. Chuyên thiết kế và phát triển các sản phẩm web nghệ thuật, ấn tượng và tối ưu trải nghiệm người dùng.">
+    <meta name="keywords" content="Văn Trận, Van Tran, Portfolio, Creative Developer, Web Design, Frontend, Artist, Lập trình nghệ thuật">
+    <meta name="author" content="Văn Trận">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Văn Trận Portfolio | Creative Developer & Artist">
+    <meta property="og:description" content="Portfolio của Văn Trận - Nơi lập trình kết hợp nghệ thuật. Khám phá các dự án sáng tạo và thiết kế độc đáo.">
+    <meta property="og:image" content="assets/images/hero-bg.jpg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Playwrite+VN:wght@400&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icons (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <!-- Glowing Background Blobs for Artistic Depth -->
+    <div class="glow-blob blob-orange" id="blob-orange"></div>
+    <div class="glow-blob blob-purple" id="blob-purple"></div>
+    <div class="glow-blob blob-blue" id="blob-blue"></div>
+    
+    <!-- Glassmorphic Header -->
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <a href="#" class="logo" id="logo-link">
+                <span class="logo-dot"></span>VT.<span>CREATIVE</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active" id="nav-home">Giới thiệu</a></li>
+                    <li><a href="#about" class="nav-link" id="nav-about">Kỹ năng</a></li>
+                    <li><a href="#projects" class="nav-link" id="nav-projects">Environment & Asset</a></li>
+                    <li><a href="#contact" class="nav-link" id="nav-contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-overlay"></div>
+            
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="tagline fade-in-up" style="--delay: 0.2s">
+                        <span class="tag-badge">Game Designer</span>
+                    </div>
+                    
+                    <h1 class="hero-title fade-in-up" id="hero-main-title" style="--delay: 0.4s">
+                        <span class="text-artist">Văn Trận</span>
+                    </h1>
+                    
+                    <p class="hero-desc fade-in-up" id="hero-main-desc" style="--delay: 0.6s">
+                        Tôi là Văn Trận - Nhà phát triển sáng tạo chuyên biến các ý tưởng trừu tượng thành trải nghiệm số sinh động, kết hợp giữa tư duy logic của lập trình viên và tâm hồn bay bổng của người nghệ sĩ.
+                    </p>
+                    
+                    <div class="hero-motto fade-in-up" style="--delay: 0.75s">
+                        <span class="motto-label">Phương châm của tôi</span>
+                        <p class="motto-text">"Kết nối chặt chẽ giữa cơ chế lối chơi cốt lõi (Core Gameplay) và nghệ thuật kể chuyện bằng hình ảnh sống động."</p>
+                    </div>
+                    
+                    <div class="hero-actions fade-in-up" style="--delay: 0.9s">
+                        <a href="#projects" class="btn btn-primary" id="hero-btn-primary">
+                            <span>Khám phá dự án</span>
+                            <i class="ri-palette-line"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-btn-secondary">
+                            <span>Liên hệ ngay</span>
+                            <i class="ri-mail-send-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Side Social Links -->
+            <div class="hero-socials fade-in-up" style="--delay: 1s">
+                <a href="https://zalo.me" target="_blank" rel="noopener" class="social-icon" aria-label="Zalo">
+                    <span class="zalo-logo-text" style="font-family: 'Outfit', sans-serif; font-weight: 850; font-size: 0.72rem; letter-spacing: -0.3px; display: block; line-height: 1;">Zalo</span>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook"><i class="ri-facebook-circle-fill"></i></a>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator fade-in-up" style="--delay: 1.2s" id="scroll-trigger">
+                <span class="scroll-text">Cuộn xuống để khám phá</span>
+                <div class="mouse-scroll">
+                    <span class="wheel"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" id="about">
+            <div class="container">
+                <div class="section-header fade-in-up" style="--delay: 0.1s">
+                    <span class="section-tagline">My Arsenal</span>
+                    <h2 class="section-title">Kỹ năng chuyên môn & <span class="text-gradient">Công cụ</span></h2>
+                    <p class="section-desc">Sự kết hợp giữa tư duy thiết kế hệ thống game và khả năng sáng tạo mỹ thuật trực quan.</p>
+                </div>
+                
+                <!-- Group 1: Thiết kế Game & UI/UX -->
+                <div class="skills-category-group">
+                    <h3 class="category-title fade-in-up" style="--delay: 0.2s">
+                        <span class="logo-dot"></span>Thiết kế Game & UI/UX
+                    </h3>
+                    <div class="skills-mini-grid">
+                        <div class="mini-skill-card fade-in-up" style="--delay: 0.3s">
+                            <div class="mini-card-icon"><i class="ri-gamepad-line"></i></div>
+                            <h4>Core Gameplay</h4>
+                            <p>Xây dựng ý tưởng và phát triển cơ chế lối chơi cốt lõi.</p>
+                        </div>
+                        <div class="mini-skill-card fade-in-up" style="--delay: 0.4s">
+                            <div class="mini-card-icon"><i class="ri-route-line"></i></div>
+                            <h4>Player Journey</h4>
+                            <p>Thiết kế hành trình, trải nghiệm và tâm lý người chơi.</p>
+                        </div>
+                        <div class="mini-skill-card fade-in-up" style="--delay: 0.5s">
+                            <div class="mini-card-icon"><i class="ri-layout-masonry-line"></i></div>
+                            <h4>Wireframing & Prototyping</h4>
+                            <p>Vẽ sơ đồ tư duy và lập bản phác thảo luồng game trực quan.</p>
+                        </div>
+                        <div class="mini-skill-card fade-in-up" style="--delay: 0.6s">
+                            <div class="mini-card-icon"><i class="ri-map-2-line"></i></div>
+                            <h4>Level Design Flow</h4>
+                            <p>Thiết kế nhịp độ và bố cục các màn chơi sinh động.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 2: Mỹ thuật & Tài nguyên Game -->
+                <div class="skills-category-group" style="margin-top: 50px; margin-bottom: 60px;">
+                    <h3 class="category-title fade-in-up" style="--delay: 0.4s">
+                        <span class="logo-dot"></span>Mỹ thuật & Tài nguyên Game
+                    </h3>
+                    <div class="skills-mini-grid">
+                        <div class="mini-skill-card fade-in-up" style="--delay: 0.5s">
+                            <div class="mini-card-icon"><i class="ri-brush-3-line"></i></div>
+                            <h4>Concept Art</h4>
+                            <p>Sáng tác ý tưởng (Concept) nhân vật và môi trường game.</p>
+                        </div>
+                        <div class="mini-skill-card fade-in-up" style="--delay: 0.6s">
+                            <div class="mini-card-icon"><i class="ri-sword-line"></i></div>
+                            <h4>2D Game Assets</h4>
+                            <p>Thiết kế các tài nguyên đồ họa 2D phục vụ phát triển game.</p>
+                        </div>
+                        <div class="mini-skill-card fade-in-up" style="--delay: 0.7s">
+                            <div class="mini-card-icon"><i class="ri-dashboard-line"></i></div>
+                            <h4>UI Elements / HUD</h4>
+                            <p>Thiết kế giao diện người dùng và hệ thống biểu tượng trong game.</p>
+                        </div>
+                        <div class="mini-skill-card fade-in-up" style="--delay: 0.8s">
+                            <div class="mini-card-icon"><i class="ri-shape-2-line"></i></div>
+                            <h4>3D Modeling</h4>
+                            <p>Dựng hình khối không gian 3D cơ bản bằng Blender.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Sub-section -->
+                <div class="tools-container fade-in-up" style="--delay: 0.7s">
+                    <h3 class="tools-title">Công cụ sử dụng</h3>
+                    <div class="tools-grid">
+                        <!-- Figma -->
+                        <div class="tool-badge" style="--tool-color: #F24E1E;">
+                            <svg class="tool-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36" width="13" height="20" style="margin-right: 2px;">
+                                <!-- Row 1 Left (Red) -->
+                                <path d="M12 12V0H6a6 6 0 0 0 0 12z" fill="#F24E1E"/>
+                                <!-- Row 1 Right (Orange) -->
+                                <circle cx="18" cy="6" r="6" fill="#FF7262" />
+                                <!-- Row 2 Left (Purple) -->
+                                <path d="M12 24V12H6a6 6 0 0 0 0 12z" fill="#A259FF"/>
+                                <!-- Row 2 Right (Blue) -->
+                                <circle cx="18" cy="18" r="6" fill="#1ABCFE" />
+                                <!-- Row 3 Left (Green) -->
+                                <path d="M12 30V24H6a6 6 0 1 0 6 6z" fill="#0ACF83"/>
+                            </svg>
+                            <span>Figma</span>
+                        </div>
+                        
+                        <!-- Photoshop -->
+                        <div class="tool-badge" style="--tool-color: #31A8FF;">
+                            <svg class="tool-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                                <rect width="24" height="24" rx="4" fill="#001c3d" stroke="#00c8ff" stroke-width="1.5"/>
+                                <text x="12" y="16.5" font-family="'Outfit', sans-serif" font-weight="900" font-size="11" fill="#00c8ff" text-anchor="middle">Ps</text>
+                            </svg>
+                            <span>Adobe Photoshop</span>
+                        </div>
+                        
+                        <!-- Blender -->
+                        <div class="tool-badge" style="--tool-color: #EA7600;">
+                            <svg class="tool-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M10.8 17.6c-3.6 0-6.5-2.9-6.5-6.5s2.9-6.5 6.5-6.5c2.3 0 4.3 1.2 5.5 3l4.9-2c.3-.1.7.1.8.4.1.3-.1.7-.4.8l-4.5 1.8c.1.3.2.7.2 1.1 0 3.6-2.9 6.5-6.5 6.5z" fill="#EA7600"/>
+                                <circle cx="10.8" cy="11.1" r="2.8" fill="#1466B3"/>
+                                <circle cx="10.8" cy="11.1" r="4.2" stroke="#ffffff" stroke-width="1.2" fill="none"/>
+                                <path d="M15.5 8.5l3.8-3.8c.2-.2.6-.2.8 0s.2.6 0 .8l-3.8 3.8" stroke="#EA7600" stroke-width="2.5" stroke-linecap="round"/>
+                                <path d="M16.5 11.5h4.5c.3 0 .5.2.5.5s-.2.5-.5.5h-4.5" stroke="#EA7600" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                            <span>Blender</span>
+                        </div>
+                        
+                        <!-- AI Tools -->
+                        <div class="tool-badge" style="--tool-color: #FFB100;">
+                            <svg class="tool-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                                <defs>
+                                    <linearGradient id="ai-spark-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#FF5E36"/>
+                                        <stop offset="50%" stop-color="#FFAE00"/>
+                                        <stop offset="100%" stop-color="#00F0FF"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M10 2c0 3.5 2.5 6 6 6c-3.5 0-6 2.5-6 6c0-3.5-2.5-6-6-6c3.5 0 6-2.5 6-6z" fill="url(#ai-spark-grad)"/>
+                                <path d="M17 12c0 2 1.5 3.5 3.5 3.5c-2 0-3.5 1.5-3.5 3.5c0-2-1.5-3.5-3.5-3.5c2 0 3.5-1.5 3.5-3.5z" fill="url(#ai-spark-grad)"/>
+                            </svg>
+                            <span>AI-assisted Art Tools</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+
+            <!-- Category 1: Environment Design & Asset -->
+            <div class="portfolio-category">
+                <!-- BANNER TRÀN VIỀN -->
+                <div class="category-banner-wrapper fade-in-up" style="--delay: 0.2s">
+                    <div class="category-banner env-banner">
+                        <img src="assets/images/project-env.jpg" alt="Environment Design & Asset Banner" class="banner-img">
+                        <div class="banner-overlay"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <!-- COLLAGE TÁC PHẨM FREESTYLE -->
+                    <div class="artworks-collage env-collage">
+                        <!-- Tác phẩm 5 (Ảnh thật mới - Khung to chiếm trọn 100% chiều ngang) -->
+                        <div class="collage-item item-fullwidth has-img fade-in-up" style="--delay: 0.25s">
+                            <div class="collage-img-container">
+                                <img src="assets/images/env-art-5.jpg" alt="FOREST WATERMILL Environment Design & Assets" class="collage-img">
+                            </div>
+                        </div>
+
+                        <!-- Cột trái (Tác phẩm 1, 2 & 3) -->
+                        <div class="collage-column col-left">
+                            <!-- Tác phẩm 1 (Ảnh thật) -->
+                            <div class="collage-item item-large has-img fade-in-up" style="--delay: 0.3s">
+                                <div class="collage-img-container">
+                                    <img src="assets/images/env-art-1.png" alt="FOREST Environment Design & Assets" class="collage-img">
+                                </div>
+                            </div>
+
+                            <!-- Tác phẩm 2 (Ảnh thật) -->
+                            <div class="collage-item item-medium has-img fade-in-up" style="--delay: 0.4s">
+                                <div class="collage-img-container">
+                                    <img src="assets/images/env-art-2.jpg" alt="RED CANYON Environment Design" class="collage-img">
+                                </div>
+                            </div>
+
+                            <!-- Tác phẩm 3 (Ảnh thật) -->
+                            <div class="collage-item item-small has-img fade-in-up" style="--delay: 0.5s">
+                                <div class="collage-img-container">
+                                    <img src="assets/images/env-art-3.jpg" alt="FANTASY TEMPLE Environment Design & Assets" class="collage-img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cột phải (Tác phẩm 4 & 6) -->
+                        <div class="collage-column col-right">
+                            <!-- Tác phẩm 4 (Ảnh thật) -->
+                            <div class="collage-item item-wide has-img fade-in-up" style="--delay: 0.6s">
+                                <div class="collage-img-container">
+                                    <img src="assets/images/env-art-4.jpg" alt="ENVIRONMENT THUMBNAIL SKETCHES" class="collage-img">
+                                </div>
+                            </div>
+
+                            <!-- Tác phẩm 6 (Ảnh thật mới - Phác thảo chiến đấu) -->
+                            <div class="collage-item item-small has-img fade-in-up" style="--delay: 0.7s">
+                                <div class="collage-img-container">
+                                    <img src="assets/images/char-art-1.jpg" alt="WARRIOR VS BEAST Concept Art Sketch" class="collage-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2: Game UI & HUD Design -->
+            <div class="portfolio-category" style="margin-top: 80px;">
+                <!-- BANNER GRADIENT CSS CHO UI/UX TRÀN VIỀN -->
+                <div class="category-banner-wrapper fade-in-up" style="--delay: 0.2s">
+                    <div class="category-banner ui-banner">
+                        <div class="ui-banner-content">
+                            <div class="ui-banner-badge">Interface System</div>
+                            <h3 class="ui-banner-title">GAME UI & HUD DESIGN</h3>
+                            <p class="ui-banner-desc">Xây dựng ý tưởng cơ chế gameplay, thiết kế hành trình người chơi, vẽ sơ đồ mindmap & thiết kế luồng game.</p>
+                        </div>
+                        <div class="banner-overlay"></div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <!-- COLLAGE TÁC PHẨM UI FREESTYLE -->
+                    <div class="artworks-collage ui-collage">
+                        <!-- Cột trái (UI 1) -->
+                        <div class="collage-column col-left">
+                            <!-- Tác phẩm UI 1 -->
+                            <div class="collage-item item-large has-img fade-in-up" style="--delay: 0.3s">
+                                <div class="collage-img-container">
+                                    <img src="assets/images/ui-art-1.jpg" alt="Game HUD & Skill Bar Design" class="collage-img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cột phải (UI 2) -->
+                        <div class="collage-column col-right">
+                            <!-- Tác phẩm UI 2 -->
+                            <div class="collage-item item-medium has-img fade-in-up" style="--delay: 0.4s">
+                                <div class="collage-img-container">
+                                    <img src="assets/images/ui-art-2.jpg" alt="Game HUD & Character Status Design" class="collage-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3: Production Art (Tràn viền) -->
+            <div class="portfolio-category" style="margin-top: 80px; margin-bottom: 0;">
+                <div class="color-script-fullwidth fade-in-up" style="--delay: 0.2s">
+                    <img src="assets/images/bg-concept.jpg" alt="BACKGROUND CONCEPT Landscape Design" class="color-script-img">
+                </div>
+                <div class="color-script-fullwidth fade-in-up" style="--delay: 0.3s; margin-top: 30px;">
+                    <img src="assets/images/bg-concept-board.jpg" alt="BACKGROUND CONCEPT board overview" class="color-script-img">
+                </div>
+                <div class="color-script-fullwidth fade-in-up" style="--delay: 0.4s; margin-top: 30px;">
+                    <img src="assets/images/bg-concept-3.jpg" alt="BACKGROUND CONCEPT detail rendering" class="color-script-img">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Concluding Thank You & Contact Section (Tràn viền) -->
+        <section class="contact-section" id="contact">
+            <div class="color-script-fullwidth fade-in-up" style="--delay: 0.2s;">
+                <img src="assets/images/thank-you.jpg" alt="THANK YOU - Looking forward to contact!" class="color-script-img">
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom JS -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
